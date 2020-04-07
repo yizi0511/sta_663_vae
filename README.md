@@ -1,2 +1,2 @@
-# sta_663_vae
-Implementation of paper "Auto-Encoding Variational Bayes"
+# VAE
+Python implementation of the paper "Auto-Encoding Variational Bayes"
