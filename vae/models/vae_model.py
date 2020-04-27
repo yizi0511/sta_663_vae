@@ -12,9 +12,9 @@ from vae.utils.functionals import sigmoid, lrelu, tanh, relu, initialize_weight,
 class VAE():
     def __init__(self, input_size, latent_size, hidden_size, 
     			batch_size, learning_rate, beta1, beta2, tolerance):
-    """
-    Initialize the VAE model.
-    """
+        """
+        Initialize the VAE model.
+        """
         
         self.n_in = input_size
         self.n_z = latent_size

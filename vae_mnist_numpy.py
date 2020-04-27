@@ -1,4 +1,5 @@
 import os
+import argparse
 import numpy as npy
 
 try:
@@ -8,7 +9,22 @@ except ImportError:
     print("GPU not enabled on this machine.")
 
 from vae.models.vae_model import VAE
-from vae.utils.functionals import load_mnist, BCE    
+from vae.utils.functionals import load_mnist, BCE
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--epoch", type=int, default=20)
+    parser.add_argument("--input_size", type=int, default=784)
+    parser.add_argument("--latent_size", type=int, default=20)
+    parser.add_argument("--hidden_size", type=int, default=500)
+    parser.add_argument("--learning_rate", type=float, default=0.0001)
+    parser.add_argument("--beta1", type=float, default=0.9)
+    parser.add_argument("--beta2", type=float, default=0.999)
+    parser.add_argument("--tolerance", type=float, default=1e-8)
+    parser.add_argument("--batch_size", type=int, default=100)
+    return parser.parse_args()
+
+args = parse_args()
 
 np.random.seed(663)
 
@@ -76,20 +92,10 @@ def train(model, n_epoch=20):
             
 if __name__ == '__main__':
 
-    # Set up model params
-    input_size = 784
-    latent_size = 20
-    hidden_size = 400 
-    batch_size = 64 
-    learning_rate = 0.0001
-    beta1 = 0.9
-    beta2 = 0.999
-    tolerance = 1e-8
-
     # Instantiate model
-    model = VAE(input_size, latent_size, hidden_size, 
-                batch_size, learning_rate, beta1, beta2, tolerance)
+    model = VAE(args.input_size, args.latent_size, args.hidden_size, 
+                args.batch_size, args.learning_rate, args.beta1, args.beta2, args.tolerance)
 
     # Train model
-    train(model, n_epoch=20)
+    train(model, n_epoch=args.epoch)
     

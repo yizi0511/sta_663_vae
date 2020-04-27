@@ -91,7 +91,6 @@ def initialize_bias(dim_out):
     return b
 
 
-
 ###### Data Loaders ######
 
 def load_mnist(data_path, label_path):
