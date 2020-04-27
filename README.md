@@ -1,6 +1,6 @@
 # Python Implementation of Variational Auto-Encoder
 
-![VAE structure](https://github.com/yizi0511/sta_663_vae/blob/master/demo/vae.png)
+<img src="https://github.com/yizi0511/sta_663_vae/blob/master/demo/vae.png" width="1000" height="180">
 A variational auto-encoder (VAE) is implemented in this repository for STA 663 final project. Our work includes:
 
 - An implementation of VAE using NumPy
