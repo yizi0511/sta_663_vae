@@ -20,26 +20,26 @@ Our package has several dependencies. We recommend using Anaconda to create a vi
 
 # Instructions
 
-1. Train VAE on the following data sets: <br/>
+#### 1. Train VAE on the following data sets: <br/>
 
-#### MNIST (NumPy)
+##### MNIST (NumPy)
 ```python3 vae_mnist_numpy.py``` <br/>
-#### MNIST (Tensorflow)
+##### MNIST (Tensorflow)
 ```python3 vae_mnist_tensorflow.py``` <br/>
-#### HCP 
+##### HCP 
 ```python3 vae_hcp_pytorch.py``` <br/>
 
 You can specify a list of arguments as inputs to the auto-encoder: <br/>
 ```python3 vae_mnist_tensorflow.py --epoch=200 --learning_rate=0.01 --use_cpu=0``` <br/>
 
-2. Run comparative algorithms on MNIST: <br/>
+#### 2. Run comparative algorithms on MNIST: <br/>
 
-#### RBM 
+##### RBM 
 ``` python3 ./other_algorithms/rbm_mnist.py``` <br/>
-#### BNN 
+##### BNN 
 ``` python3 ./other_algorithms/Bayesian-Neural-Networks/train_BayesByBackprop_MNIST.py``` <br/>
 
-3. For demonstration and visualization of our model on various data sets, please see the ```demo``` directory. 
+#### 3. For demonstration and visualization of our model on various data sets, please see the ```demo``` directory. 
 
 
 # Resources
