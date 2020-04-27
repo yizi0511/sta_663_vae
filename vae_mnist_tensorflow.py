@@ -46,7 +46,7 @@ def calculate_elbo(model, X, recon_X):
 
 
 def train_mnist(network_architecture, train_images, test_images,
-                learning_rate=0.001, batch_size=100, n_epoch=10, use_cpu=True):
+                learning_rate=0.001, batch_size=100, n_epoch=10, use_cpu=1):
     """
     Train the VAE model on the MNIST data set.
     """
