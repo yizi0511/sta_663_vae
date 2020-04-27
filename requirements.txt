@@ -1,1 +1,7 @@
 numpy
+cupy
+tensorflow
+mnist
+scipy
+torch
+matplotlib
