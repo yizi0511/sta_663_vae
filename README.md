@@ -7,7 +7,7 @@ A variational auto-encoder (VAE) is implemented in this repository for STA 663 f
 - Comparison to two other image reconstruction algorithms: Restricted Boltzman Machine (RBM) and Bayesian Convolutional Neural Networks with Bayes by Backprop (BNN)
 - We tested our VAE model on the simulated networks, MNIST and other real-world data sets.
 
---------
+
 #### Installation
 
 Our package has several dependencies. We recommend using Anaconda to create a virtual environment and then install the required packages:
@@ -18,7 +18,7 @@ Our package has several dependencies. We recommend using Anaconda to create a vi
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package: ```python setup.py install```
 
---------
+
 #### Instructions
 
 1. Train VAE on the following data sets: <br/>
@@ -35,7 +35,7 @@ You can specify a list of arguments as inputs to the auto-encoder: <br/>
 
 3. For demonstration and visualization of our model on various data sets, please see the ```demo``` directory. 
 
---------
+
 #### Resources
 
 1. [The original VAE paper by Kingma and Welling](https://arxiv.org/abs/1312.6114)
