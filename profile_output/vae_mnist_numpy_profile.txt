@@ -1,0 +1,121 @@
+         38440560 function calls (38440547 primitive calls) in 32.241 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      937   16.990    0.018   26.438    0.028 vae_model.py:108(optimize)
+ 12180338    6.292    0.000    6.306    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+ 12179401    2.826    0.000    9.689    0.000 <__array_function__ internals>:2(can_cast)
+     5622    2.222    0.000    2.416    0.000 functionals.py:44(lrelu)
+        1    0.748    0.748    0.817    0.817 {method 'shuffle' of 'numpy.random.mtrand.RandomState' objects}
+      937    0.687    0.001   30.356    0.032 vae_model.py:145(backward)
+ 12179401    0.574    0.000    0.574    0.000 multiarray.py:469(can_cast)
+   849046    0.382    0.000    0.482    0.000 numeric.py:1786(isscalar)
+    14055    0.289    0.000    0.292    0.000 {method 'dot' of 'cupy.core.core.ndarray' objects}
+    14992    0.238    0.000    0.256    0.000 {built-in method cupy.core.core.matmul}
+        1    0.159    0.159   32.241   32.241 train_mnist.py:17(train)
+     1874    0.117    0.000    0.210    0.000 functionals.py:22(sigmoid)
+      937    0.109    0.000    0.181    0.000 functionals.py:11(BCE)
+   853922    0.091    0.000    0.101    0.000 {built-in method builtins.isinstance}
+        1    0.059    0.059    0.059    0.059 {built-in method cupy.core.core.array}
+     4685    0.054    0.000    0.054    0.000 {method 'fill' of 'cupy.core.core.ndarray' objects}
+     1874    0.051    0.000    0.072    0.000 functionals.py:33(relu)
+      937    0.043    0.000    0.122    0.000 vae_model.py:88(reparametrize)
+    34669    0.037    0.000    0.037    0.000 {method 'reshape' of 'cupy.core.core.ndarray' objects}
+      937    0.036    0.000    0.251    0.000 vae_model.py:55(encode)
+    29984    0.036    0.000    0.068    0.000 dims.py:138(expand_dims)
+      937    0.028    0.000    0.064    0.000 distributions.py:481(normal)
+     1874    0.027    0.000    0.027    0.000 {method 'sum' of 'cupy.core.core.ndarray' objects}
+      937    0.026    0.000    0.173    0.000 vae_model.py:70(decode)
+     4685    0.018    0.000    0.104    0.000 basic.py:153(ones_like)
+        2    0.015    0.007    0.015    0.007 {method 'astype' of 'numpy.ndarray' objects}
+       38    0.014    0.000    0.014    0.000 {method 'load' of 'cupy.cuda.function.Module' objects}
+        1    0.014    0.014    0.095    0.095 functionals.py:97(load_mnist)
+     4685    0.008    0.000    0.032    0.000 basic.py:25(_new_like_order_and_strides)
+        2    0.008    0.004    0.008    0.004 {built-in method numpy.fromfile}
+       76    0.006    0.000    0.006    0.000 {built-in method _hashlib.openssl_md5}
+     4687    0.006    0.000    0.010    0.000 abc.py:180(__instancecheck__)
+      937    0.004    0.000    0.004    0.000 {built-in method cupy.cuda.curand.generateNormalDouble}
+     9378    0.004    0.000    0.004    0.000 _weakrefset.py:70(__contains__)
+      937    0.003    0.000    0.549    0.001 vae_model.py:97(forward)
+      937    0.002    0.000    0.010    0.000 generator.py:68(_generate_normal)
+      937    0.002    0.000    0.002    0.000 basic.py:7(empty)
+    15069    0.002    0.000    0.002    0.000 {built-in method builtins.len}
+     4685    0.002    0.000    0.009    0.000 shape.py:1(reshape)
+     1874    0.002    0.000    0.029    0.000 sumprod.py:10(sum)
+     4685    0.001    0.000    0.001    0.000 {built-in method builtins.chr}
+      937    0.001    0.000    0.001    0.000 generator.py:1215(get_random_state)
+      937    0.001    0.000    0.012    0.000 generator.py:400(normal)
+     4685    0.001    0.000    0.001    0.000 {built-in method cupy.core.core._update_order_char}
+      937    0.001    0.000    0.001    0.000 generator.py:1253(_check_and_get_dtype)
+     4685    0.001    0.000    0.001    0.000 {method 'upper' of 'str' objects}
+       38    0.001    0.000    0.023    0.001 compiler.py:290(_compile_with_cache_cuda)
+      937    0.001    0.000    0.018    0.000 <__array_function__ internals>:2(sum)
+     4685    0.001    0.000    0.001    0.000 {built-in method builtins.ord}
+      937    0.001    0.000    0.001    0.000 {built-in method _functools.reduce}
+     1874    0.001    0.000    0.001    0.000 {built-in method cupy.core._kernel._is_fusing}
+      937    0.001    0.000    0.065    0.000 distributions.py:757(standard_normal)
+       40    0.000    0.000    0.000    0.000 {built-in method io.open}
+      152    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+       38    0.000    0.000    0.000    0.000 {method 'sub' of '_sre.SRE_Pattern' objects}
+       76    0.000    0.000    0.000    0.000 {built-in method posix.stat}
+      975    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+      114    0.000    0.000    0.000    0.000 posixpath.py:75(join)
+      937    0.000    0.000    0.000    0.000 fromnumeric.py:2087(_sum_dispatcher)
+      937    0.000    0.000    0.000    0.000 {built-in method cupy.core.internal.get_size}
+      120    0.000    0.000    0.001    0.000 _dtype.py:333(_name_get)
+      230    0.000    0.000    0.000    0.000 numerictypes.py:293(issubclass_)
+      120    0.000    0.000    0.001    0.000 _dtype.py:46(__str__)
+       38    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+      236    0.000    0.000    0.000    0.000 string.py:119(convert)
+  597/588    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+       76    0.000    0.000    0.000    0.000 os.py:664(__getitem__)
+       38    0.000    0.000    0.023    0.001 compiler.py:280(compile_with_cache)
+       38    0.000    0.000    0.000    0.000 string.py:105(substitute)
+      115    0.000    0.000    0.000    0.000 numerictypes.py:365(issubdtype)
+       76    0.000    0.000    0.000    0.000 _collections_abc.py:657(get)
+      120    0.000    0.000    0.000    0.000 _dtype.py:319(_name_includes_bit_suffix)
+       38    0.000    0.000    0.000    0.000 compiler.py:59(_get_arch)
+      472    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+       76    0.000    0.000    0.000    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+      115    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       76    0.000    0.000    0.000    0.000 os.py:742(encode)
+      114    0.000    0.000    0.000    0.000 posixpath.py:41(_get_sep)
+       38    0.000    0.000    0.000    0.000 genericpath.py:39(isdir)
+      6/2    0.000    0.000    0.000    0.000 abc.py:196(__subclasscheck__)
+       38    0.000    0.000    0.000    0.000 compiler.py:273(get_cache_dir)
+      190    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       38    0.000    0.000    0.000    0.000 compiler.py:123(_get_bool_env_variable)
+      120    0.000    0.000    0.000    0.000 _dtype.py:36(_kind_name)
+       38    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+      190    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+      114    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+       38    0.000    0.000    0.000    0.000 six.py:627(b)
+       38    0.000    0.000    0.000    0.000 genericpath.py:16(exists)
+       38    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISDIR}
+       38    0.000    0.000    0.000    0.000 _environment.py:12(get_cuda_path)
+       38    0.000    0.000    0.000    0.000 string.py:88(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+        6    0.000    0.000    0.000    0.000 _weakrefset.py:36(__init__)
+        5    0.000    0.000    0.000    0.000 _weakrefset.py:26(__exit__)
+        2    0.000    0.000    0.000    0.000 {built-in method _locale.nl_langinfo}
+        2    0.000    0.000    0.000    0.000 _bootlocale.py:23(getpreferredencoding)
+       13    0.000    0.000    0.000    0.000 _weakrefset.py:58(__iter__)
+        6    0.000    0.000    0.000    0.000 _weakrefset.py:81(add)
+       11    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 codecs.py:308(__init__)
+        2    0.000    0.000    0.000    0.000 codecs.py:334(setstate)
+        5    0.000    0.000    0.000    0.000 _weakrefset.py:16(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.059    0.059 from_data.py:7(array)
+       38    0.000    0.000    0.000    0.000 compiler.py:51(_get_nvrtc_version)
+        5    0.000    0.000    0.000    0.000 _weakrefset.py:20(__enter__)
+        5    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+        5    0.000    0.000    0.000    0.000 {method '__subclasshook__' of 'object' objects}
+        5    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 os.py:1067(__subclasshook__)
+        2    0.000    0.000    0.000    0.000 codecs.py:259(__init__)
+        5    0.000    0.000    0.000    0.000 _weakrefset.py:52(_commit_removals)
+        5    0.000    0.000    0.000    0.000 {method '__subclasses__' of 'type' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
