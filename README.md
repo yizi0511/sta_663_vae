@@ -19,6 +19,14 @@ Our package has several dependencies. We recommend using Anaconda to create a vi
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package: ```python setup.py install```
 
+# Data Set:
+
+1. MNIST: located in `./vae/data/`
+2. HCP:
+   - ```HCP_subcortical_CMData_desikan.mat``` includes network data from 1065 human subjects
+   - ```HCP_Covariates.mat``` includes human cognition traits 
+3. Simulated data: see ```./demo/simulate_random_networks.ipynb```
+
 
 # Instructions
 
