@@ -11,8 +11,9 @@ A variational auto-encoder (VAE) is implemented in this repository for STA 663 f
 # Requirements
 Python >= 3.6 <br/>
 numpy <br/>
-cupy <br/>
+cupy (optional) <br/>
 tensorflow <br/>
+tensorflow-gpu (optional) <br/>
 mnist <br/>
 scipy <br/>
 matplotlib <br/>
@@ -26,7 +27,7 @@ Our package has several dependencies. We recommend creating a virtual environmen
 3. Activate that environment: ```source vae_env/bin/activate```
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package locally: ```python setup.py install``` or from TestPyPI <br/>
-`pip install -i https://test.pypi.org/simple/ sta-663-vae`
+`pip install -i https://test.pypi.org/simple/ simplevae`
 
 # Data Set:
 
