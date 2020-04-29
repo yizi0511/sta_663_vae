@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="sta-663-vae", # Replace with your own username
+    name="simplevae", # Replace with your own username
     version="1.0.0",
     author="Chenxi Wu, Yizi Zhang",
     author_email="chenxi.wu@duke.edu, yizi.zhang@duke.edu",
@@ -20,8 +20,6 @@ setuptools.setup(
     python_requires='>=3.6',
     install_requires=[
         'numpy',
-	'cupy',
 	'tensorflow',
-	'tensorflow-gpu',
     ],
 )
