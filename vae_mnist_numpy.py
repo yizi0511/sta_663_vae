@@ -96,6 +96,15 @@ if __name__ == '__main__':
     model = VAE(args.input_size, args.latent_size, args.hidden_size, 
                 args.batch_size, args.learning_rate, args.beta1, args.beta2, args.tolerance)
 
+    import cProfile
+
+    pr = cProfile.Profile()
+    pr.enable()
+
     # Train model
     train(model, n_epoch=args.epoch)
     
+    pr.disable()
+    pr.print_stats(sort='time')    
+
+
