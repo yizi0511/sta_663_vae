@@ -28,6 +28,7 @@ Our package has several dependencies. We recommend creating a virtual environmen
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package locally: ```python setup.py install``` or from TestPyPI <br/>
 `pip install -i https://test.pypi.org/simple/ simplevae`
+6. Start using it in Python3: `import vae`
 
 # Data Set:
 
