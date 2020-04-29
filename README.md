@@ -23,7 +23,7 @@ matplotlib <br/>
 Our package has several dependencies. We recommend creating a virtual environment and then installing the required packages:
 
 1. Clone the Git repo
-2. Create a virtual conda environment: ```cd sta_663_vae; python3 -m venv vae_env```
+2. Create a virtual environment: ```cd sta_663_vae; python3 -m venv vae_env```
 3. Activate that environment: ```source vae_env/bin/activate```
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package locally: ```python setup.py install``` or from TestPyPI <br/>
