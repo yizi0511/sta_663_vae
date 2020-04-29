@@ -36,7 +36,7 @@ Location: `./vae/data/` <br/>
 4. Simulated network data: see ```./demo/simulate_random_networks.ipynb```
 
 
-# Instructions
+# Testing Performed:
 
 #### 1. Train VAE: <br/>
 
