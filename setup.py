@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sta-663-vae", # Replace with your own username
-    version="0.0.1",
+    version="1.0.0",
     author="Chenxi Wu, Yizi Zhang",
     author_email="chenxi.wu@duke.edu, yizi.zhang@duke.edu",
     description="Final project of STA 663: Implementation of Variational Autoencoder",
