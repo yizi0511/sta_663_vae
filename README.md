@@ -1,7 +1,7 @@
 # Python Implementation of Variational Auto-Encoder
 
 <img src="https://github.com/yizi0511/sta_663_vae/blob/master/demo/vae.png" width="1000" height="180">
-A variational auto-encoder (VAE) is implemented in this repository for STA 663 final project. Our work includes:
+A variational auto-encoder (VAE) is implemented in this repository. Our work includes:
 
 - An implementation of VAE using NumPy
 - Using Tensorflow and GPU to optimize the code
@@ -23,7 +23,7 @@ matplotlib <br/>
 Our package has several dependencies. We recommend creating a virtual environment and then installing the required packages:
 
 1. Clone the Git repo
-2. Create a virtual environment: ```cd sta_663_vae; python3 -m venv vae_env```
+2. Create a virtual environment: ```cd vae_from_scratch; python3 -m venv vae_env```
 3. Activate that environment: ```source vae_env/bin/activate```
 4. Install the packages into the environment: ```pip install -r requirements.txt```
 5. Install our package locally: ```python setup.py install``` or from TestPyPI <br/>
